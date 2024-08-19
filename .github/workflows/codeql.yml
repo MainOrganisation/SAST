@@ -22,7 +22,7 @@ jobs:
       matrix:
         include:
         - language: c-cpp
-          build-mode: autobuild
+          build-mode: manual
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -37,6 +37,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
+        C:\actions-runner\_work\_tool\SAST\SAST\build.bat
 
 
     - name: Perform CodeQL Analysis

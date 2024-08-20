@@ -9,6 +9,6 @@ set PLATFORM=x64
 if %errorlevel% neq 0 (
 	echo Build failed with error code %errorlevel%
 	exit /b %errorlevel%
-)else(
+) else (
 	echo Build successful!
 )

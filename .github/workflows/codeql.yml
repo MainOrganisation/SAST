@@ -39,7 +39,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        C:/actions-runner/_work/SAST/SAST/build.bat
+        call C:/actions-runner/_work/SAST/SAST/build.bat
 
 
     - name: Perform CodeQL Analysis

@@ -6,7 +6,7 @@ echo Modify the following line with the correct path for your environment.
 set MSBUILD_PATH="C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe"
 
 echo Set the path to the .sln or .vcxproj file
-set PROJECT_PATH="C:\actions-runner\_work\_tool\SAST.sln"
+set PROJECT_PATH="C:\actions-runner\_work\SAST\SAST\SAST.sln"
 
 echo Set the build configuration (Debug or Release)
 set CONFIGURATION=Release

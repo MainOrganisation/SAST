@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Password.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SAST.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Password.cpp" />
     <ClCompile Include="SAST.cpp" />
   </ItemGroup>
   <ItemGroup>

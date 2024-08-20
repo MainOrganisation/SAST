@@ -37,7 +37,6 @@ jobs:
         build-mode: ${{ matrix.build-mode }}
 
     - if: matrix.build-mode == 'manual'
-      shell: bash
       run: |
         call C:/actions-runner/_work/SAST/SAST/build.bat
 

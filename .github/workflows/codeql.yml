@@ -10,7 +10,7 @@ on:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: [ self-hosted, DESKTOP-4RUG7A2 ]
+    runs-on: [ self-hosted, Default ]
     timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
     permissions:
       security-events: write

@@ -6,7 +6,7 @@ on:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: Default
+    runs-on: RUNNER-MASTER
     timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
     permissions:
       security-events: write

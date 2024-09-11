@@ -6,7 +6,7 @@ on:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: self-hosted
+    runs-on: sast-runner
     timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
     permissions:
       security-events: write

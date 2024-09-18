@@ -1,17 +1,12 @@
 name: "CodeQL"
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  schedule:
-    - cron: '35 11 * * 2'
+  workflow_dispatch:
 
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: self-hosted
+    runs-on: sast-runner
     timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
     permissions:
       security-events: write
@@ -25,7 +20,7 @@ jobs:
           build-mode: manual
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         path: C:/actions-runner/_work/SAST/SAST
 

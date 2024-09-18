@@ -3,6 +3,7 @@
 
 #include "framework.h"
 #include "SAST.h"
+#include <string>
 
 #define MAX_LOADSTRING 100
 
@@ -31,6 +32,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
     LoadStringW(hInstance, IDC_SAST, szWindowClass, MAX_LOADSTRING);
     MyRegisterClass(hInstance);
+    std::string username = "user";
+    std::string password = "password";
+    std::string email = "danielrspereira@hotmail.com";
 
     // Perform application initialization:
     if (!InitInstance (hInstance, nCmdShow))
